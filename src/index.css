@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cw-primary: #A981FF;
+  --color-cw-secondary: #B796FE;
+  --color-cw-light: #D0BCFC;
+  --color-cw-dark: #111827;
+  --color-cw-ink: #111827;
+  --color-cw-muted: #6B7280;
+  --color-cw-subtle: #9CA3AF;
+  --color-cw-bg: #FAF8F4;
+  --color-cw-green: #16A34A;
+  --color-cw-amber: #D97706;
+  --font-display: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #FAF8F4;
+    color: #111827;
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: #111827;
+    letter-spacing: -0.015em;
+  }
+
+  .lucide {
+    stroke-width: 1.75;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Chopwize",
+  "description": "Intelligent food discovery, ordering, and marketplace platform in Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
